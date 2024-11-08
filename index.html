@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Applikation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>To-Do Applikation</h1>
+
+        <form id="taskForm">
+
+            <!-- Required i slutet av input gör att vi måste skriva in någonting för att trycka på knappen -->
+            <input type="text" id="taskInput" placeholder="Ange en ny uppgift" required> 
+            <button type="submit">Lägg till i To-Do List</button>
+
+            <!-- Here is where we add an error message if the user only puts in spaces -->
+            <p id="message"></p> 
+
+        </form>
+
+        <!-- Here is where we add new HTML code when we create tasks -->
+        <ul id="taskList"></ul>
+        
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
